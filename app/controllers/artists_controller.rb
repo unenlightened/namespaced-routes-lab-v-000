@@ -1,6 +1,6 @@
 class ArtistsController < ApplicationController
   def index
-    order = Preferene.last.artist_sort_order
+    order = Preference.last.artist_sort_order
     @artists = Artist.order(name: order)
   end
 
