@@ -1,7 +1,7 @@
 class ArtistsController < ApplicationController
   def index
     order = Preference.last.artist_sort_order
-    @artists = Artist.all
+    @artists = order == 'DESC' Artist.all.sort
   end
 
   def show
