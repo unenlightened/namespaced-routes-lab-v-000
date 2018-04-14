@@ -8,6 +8,8 @@ class ArtistsController < ApplicationController
   end
 
   def new
+    byebug
+    if 
     @artist = Artist.new
   end
 
