@@ -8,7 +8,6 @@ class ArtistsController < ApplicationController
   end
 
   def new
-    byebug
     redirect_to artists_path if !Preference.last.allow_create_artists
     @artist = Artist.new
   end
