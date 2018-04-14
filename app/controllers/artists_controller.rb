@@ -9,7 +9,7 @@ class ArtistsController < ApplicationController
 
   def new
     byebug
-
+    redirect_to artists_path
     @artist = Artist.new
   end
 
