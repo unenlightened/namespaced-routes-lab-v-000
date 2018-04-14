@@ -9,7 +9,7 @@ class ArtistsController < ApplicationController
 
   def new
     byebug
-    
+
     @artist = Artist.new
   end
 
